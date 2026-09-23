@@ -1,0 +1,215 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometria Analítica - Revisão</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📐 Geometria Analítica</h1>
+        <p>Revisão completa de Matemática</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#pontos">Pontos</a>
+        <a href="#distancia">Distância</a>
+        <a href="#reta">Reta</a>
+        <a href="#circunferencia">Circunferência</a>
+        <a href="#calculadora">Calculadora</a>
+    </nav>
+
+    <main>
+
+        <section id="inicio" class="introducao">
+            <h2>O que é Geometria Analítica?</h2>
+
+            <p>
+                A Geometria Analítica é uma área da Matemática que utiliza
+                coordenadas e equações para estudar figuras geométricas.
+            </p>
+
+            <p>
+                Ela permite representar pontos, retas, distâncias,
+                circunferências e outras figuras através de números e fórmulas.
+            </p>
+        </section>
+
+
+        <section id="pontos" class="card">
+            <h2>📍 1. Plano Cartesiano</h2>
+
+            <p>
+                O plano cartesiano é formado por dois eixos:
+            </p>
+
+            <ul>
+                <li><strong>Eixo X:</strong> eixo horizontal.</li>
+                <li><strong>Eixo Y:</strong> eixo vertical.</li>
+            </ul>
+
+            <p>
+                Um ponto é representado por:
+            </p>
+
+            <div class="formula">
+                P(x, y)
+            </div>
+
+            <p>
+                Exemplo: o ponto A(3, 2) possui x = 3 e y = 2.
+            </p>
+        </section>
+
+
+        <section id="distancia" class="card">
+            <h2>📏 2. Distância entre dois pontos</h2>
+
+            <p>
+                Para calcular a distância entre dois pontos
+                A(x₁, y₁) e B(x₂, y₂), usamos:
+            </p>
+
+            <div class="formula">
+                d = √[(x₂ - x₁)² + (y₂ - y₁)²]
+            </div>
+
+            <p><strong>Exemplo:</strong></p>
+
+            <p>
+                A(1, 2) e B(4, 6)
+            </p>
+
+            <div class="formula">
+                d = √[(4 - 1)² + (6 - 2)²]
+            </div>
+
+            <p>
+                d = √(9 + 16) = √25 = <strong>5</strong>
+            </p>
+        </section>
+
+
+        <section id="reta" class="card">
+            <h2>📈 3. Equação da reta</h2>
+
+            <p>
+                A equação reduzida da reta é:
+            </p>
+
+            <div class="formula">
+                y = ax + b
+            </div>
+
+            <ul>
+                <li><strong>a:</strong> coeficiente angular.</li>
+                <li><strong>b:</strong> coeficiente linear.</li>
+            </ul>
+
+            <p>
+                Exemplo:
+            </p>
+
+            <div class="formula">
+                y = 2x + 3
+            </div>
+
+            <p>
+                Nesse caso, o coeficiente angular é 2 e o coeficiente
+                linear é 3.
+            </p>
+        </section>
+
+
+        <section id="circunferencia" class="card">
+            <h2>⭕ 4. Circunferência</h2>
+
+            <p>
+                A equação reduzida da circunferência é:
+            </p>
+
+            <div class="formula">
+                (x - a)² + (y - b)² = r²
+            </div>
+
+            <p>
+                Onde:
+            </p>
+
+            <ul>
+                <li><strong>(a, b):</strong> centro da circunferência.</li>
+                <li><strong>r:</strong> raio.</li>
+            </ul>
+
+            <p>
+                Exemplo:
+            </p>
+
+            <div class="formula">
+                (x - 2)² + (y - 3)² = 25
+            </div>
+
+            <p>
+                Centro: <strong>(2, 3)</strong><br>
+                Raio: <strong>5</strong>
+            </p>
+        </section>
+
+
+        <section id="calculadora" class="calculadora">
+            <h2>🧮 Calculadora de Distância</h2>
+
+            <p>
+                Digite as coordenadas de dois pontos:
+            </p>
+
+            <div class="inputs">
+
+                <div>
+                    <label>Ponto A - X:</label>
+                    <input type="number" id="x1">
+                </div>
+
+                <div>
+                    <label>Ponto A - Y:</label>
+                    <input type="number" id="y1">
+                </div>
+
+                <div>
+                    <label>Ponto B - X:</label>
+                    <input type="number" id="x2">
+                </div>
+
+                <div>
+                    <label>Ponto B - Y:</label>
+                    <input type="number" id="y2">
+                </div>
+
+            </div>
+
+            <button onclick="calcularDistancia()">
+                Calcular distância
+            </button>
+
+            <div id="resultado"></div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Site de revisão — Geometria Analítica</p>
+        <p>Matemática • HTML • CSS • JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
